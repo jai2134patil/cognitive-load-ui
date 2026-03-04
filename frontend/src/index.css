@@ -1,0 +1,29 @@
+html, body, #root{
+height:100%;
+margin:0;
+padding:0;
+}
+
+/* gradient background */
+
+body{
+background: linear-gradient(
+135deg,
+#667eea 0%,
+#764ba2 50%,
+#6dd5ed 100%
+);
+
+background-size:200% 200%;
+animation:gradientMove 12s ease infinite;
+
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* animated gradient */
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
